@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "main": "lib/template-ui.common.js",
+  "types": "lib/packages/index.d.ts",
   "files": [
     "lib"
   ],
@@ -10,7 +11,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name template-ui --dest lib packages/index.ts"
+    "lib": "vue-cli-service build --target lib --name template-ui --dest lib packages/index.ts && tsc --emitDeclarationOnly -p tsconfig.json"
   },
   "dependencies": {
     "core-js": "^3.8.3",

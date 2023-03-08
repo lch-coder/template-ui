@@ -91,7 +91,6 @@ app.mount("#app");
 
 ```html
 <template>
-  　　
   <div>
     <MyButton></MyButton>
   </div>
